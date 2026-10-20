@@ -1,35 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-label="reqon — Owner of Utilities">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="reqon">
   <defs>
-    <radialGradient id="glow" cx="82%" cy="18%" r="65%">
-      <stop offset="0" stop-color="#a6e4f5" stop-opacity=".20"/>
-      <stop offset=".55" stop-color="#a6e4f5" stop-opacity=".04"/>
-      <stop offset="1" stop-color="#a6e4f5" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".045"/>
-    </pattern>
-    <linearGradient id="fade" x1="0" x2="1">
-      <stop offset="0" stop-color="#0a0a0a"/>
-      <stop offset=".45" stop-color="#0a0a0a" stop-opacity=".6"/>
-      <stop offset="1" stop-color="#0a0a0a" stop-opacity="0"/>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/>
     </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="60"/></filter>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#fff" fill-opacity=".07"/>
+    </pattern>
+    <clipPath id="clip"><rect width="1200" height="320" rx="20"/></clipPath>
+    <style>
+      .orb1 { animation: drift1 14s ease-in-out infinite alternate; }
+      .orb2 { animation: drift2 18s ease-in-out infinite alternate; }
+      @keyframes drift1 { from { transform: translate(0,0); } to { transform: translate(-120px,40px); } }
+      @keyframes drift2 { from { transform: translate(0,0); } to { transform: translate(140px,-30px); } }
+      .line { opacity: 0; animation: cycle 12s infinite; }
+      .l2 { animation-delay: 4s; } .l3 { animation-delay: 8s; }
+      @keyframes cycle {
+        0% { opacity: 0; transform: translateY(8px); }
+        5%, 28% { opacity: 1; transform: translateY(0); }
+        33%, 100% { opacity: 0; transform: translateY(-8px); }
+      }
+      .caret { animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+    </style>
   </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="320" fill="#0b0d12"/>
+    <circle class="orb1" cx="980" cy="60" r="190" fill="#8b5cf6" fill-opacity=".45" filter="url(#blur)"/>
+    <circle class="orb2" cx="760" cy="300" r="170" fill="#22d3ee" fill-opacity=".30" filter="url(#blur)"/>
+    <rect width="1200" height="320" fill="url(#dots)"/>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="319" rx="19.5" fill="none" stroke="#ffffff" stroke-opacity=".09"/>
 
-  <rect width="1200" height="280" rx="16" fill="#0a0a0a"/>
-  <rect width="1200" height="280" rx="16" fill="url(#grid)"/>
-  <rect width="1200" height="280" rx="16" fill="url(#fade)"/>
-  <rect width="1200" height="280" rx="16" fill="url(#glow)"/>
-  <rect x=".5" y=".5" width="1199" height="279" rx="15.5" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
-
-  <g font-family="'Segoe UI', 'DM Sans', Helvetica, Arial, sans-serif">
-    <text x="64" y="92" fill="#a6e4f5" font-size="15" font-weight="600" letter-spacing="3">HI, I'M</text>
-    <text x="62" y="160" fill="#ffffff" font-size="68" font-weight="700" letter-spacing="-1.5">reqon</text>
-    <text x="64" y="204" fill="#ffffff" fill-opacity=".62" font-size="21">Owner of Utilities — a Discord bot, its website and the tools around it.</text>
+  <g font-family="'Segoe UI', Inter, 'Helvetica Neue', Arial, sans-serif">
+    <text x="72" y="104" font-size="16" font-weight="600" letter-spacing="4" fill="#fff" fill-opacity=".55">HEY, I'M</text>
+    <text x="68" y="184" font-size="86" font-weight="800" letter-spacing="-3" fill="url(#g)">reqon</text>
+  </g>
+  <g font-family="'JetBrains Mono', 'Cascadia Code', Consolas, monospace" font-size="20" fill="#e6e8ee">
+    <text x="72" y="236" fill="#22d3ee">&gt;</text>
+    <text class="line l1" x="96" y="236">building Utilities, a Discord bot</text>
+    <text class="line l2" x="96" y="236">writing TypeScript, every day</text>
+    <text class="line l3" x="96" y="236">making things for Roblox</text>
   </g>
 
-  <g font-family="'JetBrains Mono', Consolas, ui-monospace, monospace" font-size="14">
-    <rect x="64" y="226" width="148" height="28" rx="14" fill="#a6e4f5" fill-opacity=".10" stroke="#a6e4f5" stroke-opacity=".35"/>
-    <circle cx="82" cy="240" r="4" fill="#a6e4f5"/>
-    <text x="94" y="245" fill="#d9f4fb">utilities.best</text>
+  <g font-family="'Segoe UI', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600">
+    <rect x="72" y="262" width="132" height="30" rx="15" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".12"/>
+    <circle cx="90" cy="277" r="4" fill="#22c55e"/>
+    <text x="102" y="282" fill="#e6e8ee">utilities.best</text>
   </g>
 </svg>

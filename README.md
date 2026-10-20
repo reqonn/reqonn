@@ -1,50 +1,52 @@
 <a href="https://utilities.best">
-  <img src="./assets/banner.svg" alt="reqon — Owner of Utilities" width="100%">
+  <img src="./assets/banner.svg" alt="Hey, I'm reqon" width="100%">
 </a>
 
-<br>
-
-I build **[Utilities](https://utilities.best)**, a Discord bot written in TypeScript, along with the website, the status page and the tools that run around it. I also make things for Roblox.
-
-<br>
-
-### Building
-
-|                                                                                       |                                                                                                    |
-| ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| **[Utilities](https://utilities.best)**                                               | A Discord bot for tickets, panels, welcome messages, VoiceMaster and more.                         |
-| **[`utilities-bot/transcripts`](https://github.com/utilities-bot/transcripts)**       | Self-contained, signed HTML transcripts of Discord channels.                                       |
-| **[`reqonn/discord-bot-skeleton`](https://github.com/reqonn/discord-bot-skeleton)**   | The architecture Utilities runs on, as a starting point for your own bot.                          |
-| **[`insane/routility-extension`](https://github.com/insane/routility-extension)**     | USD values, trade tools and quality of life, built right into Roblox.                              |
-| **Shotgun Velocity**                                                                  | A velocity-based shooter on Roblox, with Way Too Crazy Games.                                      |
-
-<br>
-
-### Stack
-
-<p>
-  <img src="https://img.shields.io/badge/TypeScript-111111?style=for-the-badge&logo=typescript&logoColor=a6e4f5" alt="TypeScript">
-  <img src="https://img.shields.io/badge/JavaScript-111111?style=for-the-badge&logo=javascript&logoColor=a6e4f5" alt="JavaScript">
-  <img src="https://img.shields.io/badge/Node.js-111111?style=for-the-badge&logo=nodedotjs&logoColor=a6e4f5" alt="Node.js">
-  <img src="https://img.shields.io/badge/discord.js-111111?style=for-the-badge&logo=discord&logoColor=a6e4f5" alt="discord.js">
-  <img src="https://img.shields.io/badge/Luau-111111?style=for-the-badge&logo=lua&logoColor=a6e4f5" alt="Luau">
-</p>
-<p>
-  <img src="https://img.shields.io/badge/PostgreSQL-111111?style=for-the-badge&logo=postgresql&logoColor=a6e4f5" alt="PostgreSQL">
-  <img src="https://img.shields.io/badge/Redis-111111?style=for-the-badge&logo=redis&logoColor=a6e4f5" alt="Redis">
-  <img src="https://img.shields.io/badge/Zod-111111?style=for-the-badge&logo=zod&logoColor=a6e4f5" alt="Zod">
-  <img src="https://img.shields.io/badge/Vitest-111111?style=for-the-badge&logo=vitest&logoColor=a6e4f5" alt="Vitest">
-  <img src="https://img.shields.io/badge/pnpm-111111?style=for-the-badge&logo=pnpm&logoColor=a6e4f5" alt="pnpm">
-</p>
-<p>
-  <img src="https://img.shields.io/badge/Railway-111111?style=for-the-badge&logo=railway&logoColor=a6e4f5" alt="Railway">
-  <img src="https://img.shields.io/badge/Cloudflare_Workers-111111?style=for-the-badge&logo=cloudflareworkers&logoColor=a6e4f5" alt="Cloudflare Workers">
-  <img src="https://img.shields.io/badge/GitHub_Actions-111111?style=for-the-badge&logo=githubactions&logoColor=a6e4f5" alt="GitHub Actions">
-  <img src="https://img.shields.io/badge/Roblox_Studio-111111?style=for-the-badge&logo=robloxstudio&logoColor=a6e4f5" alt="Roblox Studio">
+<p align="center">
+  <a href="https://utilities.best"><img src="https://img.shields.io/badge/Website-utilities.best-8b5cf6?style=for-the-badge&labelColor=11141b" alt="Website"></a>
+  <a href="https://utilities.best/invite"><img src="https://img.shields.io/badge/Add-Utilities-5865f2?style=for-the-badge&logo=discord&logoColor=white&labelColor=11141b" alt="Add Utilities"></a>
+  <a href="https://utilities.best/support"><img src="https://img.shields.io/badge/Support-Server-22d3ee?style=for-the-badge&logo=discord&logoColor=white&labelColor=11141b" alt="Support server"></a>
 </p>
 
+<img src="./assets/divider.svg" width="100%" alt="">
+
+<img src="./assets/h-about.svg" width="100%" alt="About me">
+
+```ts
+const reqon = {
+  role: "Owner of Utilities",
+  building: ["Utilities", "utilities.best", "discord-bot-skeleton"],
+  writes: ["TypeScript", "JavaScript", "Luau"],
+  runsOn: ["Node.js", "PostgreSQL", "Redis", "Railway", "Cloudflare Workers"],
+  currently: "redesigning every command in Utilities",
+};
+```
+
+<img src="./assets/divider.svg" width="100%" alt="">
+
+<img src="./assets/h-projects.svg" width="100%" alt="Projects">
+
+<p align="center">
+  <a href="https://utilities.best"><img src="./assets/card-utilities.svg" width="49%" alt="Utilities"></a>
+  <a href="https://github.com/utilities-bot/transcripts"><img src="./assets/card-transcripts.svg" width="49%" alt="transcripts"></a>
+</p>
+<p align="center">
+  <a href="https://github.com/reqonn/discord-bot-skeleton"><img src="./assets/card-skeleton.svg" width="49%" alt="discord-bot-skeleton"></a>
+  <a href="https://github.com/insane/routility-extension"><img src="./assets/card-routility.svg" width="49%" alt="routility-extension"></a>
+</p>
+
+<img src="./assets/divider.svg" width="100%" alt="">
+
+<img src="./assets/h-stack.svg" width="100%" alt="Tech stack">
+
+<p align="center">
+  <img src="./assets/stack-languages.svg" alt="TypeScript, JavaScript, Node.js, Lua, HTML, CSS">
+  <br><br>
+  <img src="./assets/stack-tools.svg" alt="discord.js, PostgreSQL, Redis, pnpm, Vitest, Git">
+  <br><br>
+  <img src="./assets/stack-infra.svg" alt="Cloudflare, Workers, GitHub Actions, Docker, VS Code">
+</p>
+
 <br>
 
-### Elsewhere
-
-<a href="https://utilities.best"><img src="https://img.shields.io/badge/utilities.best-a6e4f5?style=for-the-badge&logoColor=0a0a0a&labelColor=a6e4f5&color=a6e4f5" alt="utilities.best"></a>
+<img src="./assets/footer.svg" width="100%" alt="Thanks for stopping by.">
